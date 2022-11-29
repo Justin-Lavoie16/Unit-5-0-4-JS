@@ -1,6 +1,6 @@
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/Unit-5-03-JS/sw.js", {
-    scope: "/Unit-5-03-JS/",
+  navigator.serviceWorker.register("/Unit-5-0-4-JS/sw.js", {
+    scope: "/Unit-5-0-4-JS/",
   })
 }
 
