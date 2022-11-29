@@ -4,18 +4,16 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
+;("use strict")
 
 function myButtonClicked() {
- 
-  const age = document.getElementById("age").value;
-  const day = document.getElementById("day").value;
-  
-  if ((day == "Tuesday" || day == "Thurday") || (age > 12 && age < 21)) {
-     document.getElementById("answers").innerHTML =
-      ("You're eligible for student pricing!");
+  const age = document.getElementById("age").value
+  const day = document.getElementById("day").value
+
+  if (day == "Tuesday" || day == "Thurday" || (age > 12 && age < 21)) {
+    document.getElementById("answers").innerHTML =
+      "You're eligible for student pricing!"
   } else {
-      document.getElementById("answers").innerHTML =
-        ("You must pay regular price");
+    document.getElementById("answers").innerHTML = "You must pay regular price"
   }
 }
