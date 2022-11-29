@@ -10,7 +10,7 @@ function myButtonClicked() {
   const age = document.getElementById("age").value
   const day = document.getElementById("day").value
 
-  if (day == "Tuesday" || day == "Thurday" || (age > 12 && age < 21)) {
+  if (day == "Tuesday" || day == "Thursday" || (age > 12 && age < 21)) {
     document.getElementById("answers").innerHTML =
       "You're eligible for student pricing!"
   } else {
