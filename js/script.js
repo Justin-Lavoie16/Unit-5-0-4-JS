@@ -1,21 +1,21 @@
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/Unit-5-03-JS/sw.js", {
+    scope: "/Unit-5-03-JS/",
   })
 }
 
-;("use strict")
+"use strict"
 
-function calculate() {
-  const length = parseInt(document.getElementById("pay").value)
-  const width = parseInt(document.getElementById("pay2").value)
-
-  const area = length * width * 0.18
-  const perimeter = length * width * (1.0 - 0.18)
-  const TAX_RATE = 0.18
-
-  document.getElementById("area").innerHTML =
-    "The governemnt will take: " + area + "$"
-  document.getElementById("perimeter").innerHTML =
-    "your pay will be: " + perimeter + "$"
+function myButtonClicked() {
+ 
+  const age = document.getElementById("age").value;
+  const day = document.getElementById("day").value;
+  
+  if ((day == "Tuesday" || day == "Thurday") || (age > 12 && age < 21)) {
+     document.getElementById("answers").innerHTML =
+      ("You're eligible for student pricing!");
+  } else {
+      document.getElementById("answers").innerHTML =
+        ("You must pay regular price");
+  }
 }
